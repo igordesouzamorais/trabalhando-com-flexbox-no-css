@@ -24,21 +24,31 @@
             background-color: #f39c12;
             margin: 10px;
         }
+
+        #container-01 {
+            flex-direction: row; /*valor padrao*/
+        }
+
+        #container-02 {
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container-01">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
         <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
     </div>
 
-    <div class="container">
+    <div class="container" id="container-02">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
         <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
     </div>
 </body>
 </html>
