@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Trabalhando com Flebox no CSS</title>
+    <style>
+        * {
+            font-family: Roboto, sans-serif;
+        }
+
+        .container {
+            background-color: #2ecc71;
+            padding: 20px;
+            margin-bottom: 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background-color: #f39c12;
+            margin: 10px;
+        }
+
+        #container-01 {
+            flex-direction: row; /*valor padrao*/
+            width: 300px;
+        }
+
+        #container-02 {
+            flex-direction: column;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container-01">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <div class="container" id="container-02">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+</body>
+</html>
