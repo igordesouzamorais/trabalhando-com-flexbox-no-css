@@ -14,26 +14,36 @@
 
         .container {
             background-color: #2ecc71;
-            padding: 20px;
-            margin-bottom: 10px;
+            margin: 20px;
+            padding: 10px;
+            width: 300px;
+            height: 250px;
 
             display: flex;
-            flex-wrap: wrap; /*nao deixa os itens sair fora do container, valor padrao é nowrap*/
+
+            align-items: flex-start;
+            justify-content: space-around;
+
+            align-content: center;
         }
 
         .item {
             background-color: #f39c12;
-            margin: 10px;
+            width: 40px;
+            height: 40px;
         }
 
         #container-01 {
-            flex-direction: row; /*valor padrao*/
-            width: 300px;
+            flex-flow: row wrap;
         }
 
         #container-02 {
-            flex-direction: column;
-            height: 300px;
+            flex-flow: column wrap;
+        }
+
+        #container-03 {
+            align-content: flex-start;
+            flex-flow: row wrap-reverse;
         }
     </style>
 </head>
@@ -52,6 +62,19 @@
     </div>
 
     <div class="container" id="container-02">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        <div class="item">Item 5</div>
+        <div class="item">Item 6</div>
+        <div class="item">Item 7</div>
+        <div class="item">Item 8</div>
+        <div class="item">Item 9</div>
+        <div class="item">Item 10</div>
+    </div>
+
+    <div class="container" id="container-03">
         <div class="item">Item 1</div>
         <div class="item">Item 2</div>
         <div class="item">Item 3</div>
