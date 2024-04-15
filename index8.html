@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Trabalhando com Flebox no CSS</title>
+    <style>
+        * {
+            font-family: Roboto, sans-serif;
+        }
+
+        body {
+            background: #ccc;
+        }
+
+        .container {
+            background-color: #9b59b6;
+            margin-bottom: 20px;
+            padding: 10px;
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .item {
+            background-color: #f1c40f;
+            padding: 8px;
+        }
+
+        #container-01 {
+            flex-flow: row wrap;
+        }
+
+        #container-02 {
+            flex-flow: column wrap;
+        }
+
+        .item-04 {
+            order: -1; /*valor padrao é zero*/
+        }
+
+        .item-06 {
+            order: -2;
+        }
+
+        .item-09 {
+            order: -1; /*item-04 veio antes entao fica antes*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container-01">
+        <div class="item item-01">Item 1</div>
+        <div class="item item-02">Item 2</div>
+        <div class="item item-03">Item 3</div>
+        <div class="item item-04">Item 4</div>
+        <div class="item item-05">Item 5</div>
+        <div class="item item-06">Item 6</div>
+        <div class="item item-07">Item 7</div>
+        <div class="item item-08">Item 8</div>
+        <div class="item item-09">Item 9</div>
+        <div class="item item-10">Item 10</div>
+    </div>
+
+    <div class="container" id="container-02">
+        <div class="item item-01">Item 1</div>
+        <div class="item item-02">Item 2</div>
+        <div class="item item-03">Item 3</div>
+        <div class="item item-04">Item 4</div>
+        <div class="item item-05">Item 5</div>
+        <div class="item item-06">Item 6</div>
+        <div class="item item-07">Item 7</div>
+        <div class="item item-08">Item 8</div>
+        <div class="item item-09">Item 9</div>
+        <div class="item item-10">Item 10</div>
+    </div>
+</body>
+</html>
